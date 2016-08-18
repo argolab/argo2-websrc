@@ -1,0 +1,48 @@
+#
+#	libBBS (libbbs.a) version 1.0 for FirebirdBBS Series
+#	a part of SEEDNetBBS generation 1
+#
+#	$Id: Makefile.in,v 2.1 2003-06-28 05:49:07 henry Exp $
+#
+#############################################################
+
+CC	 = @CC@
+OS_DEF   = @OS_DEF@
+CFLAGS   = @CFLAGS@ -I../include/bbs -I../include
+
+#############################################################
+###        You needn't modify the following stuff      ######
+#############################################################
+LIBNAME	 = libSystem.a
+
+GARBAGE  = a.out core out.* *.bak DEAD*
+
+CFILE	 = string.c fileio.c crypt.c system.c snprintf.c setproctitle.c \
+	   winshm.c flock.c termios.c sphpsingal.c
+
+OBJS	 = string.o fileio.o crypt.o system.o snprintf.o setproctitle.o \
+	   winshm.o flock.o termios.o sphpsingal.o
+
+.SUFFIXES: .o .c
+
+.c.o:   ;   $(CC) -s $(CFLAGS) $(OS_DEF) -c $*.c
+
+#--------------------- Dependency starts here -------------------
+
+all: $(OBJS)
+	ar rv $(LIBNAME) $(OBJS)
+	ranlib $(LIBNAME)
+
+tag:
+	ctags $(CFILE)
+
+clean: /tmp
+	@echo --- Cleaning Garbage ... ---
+	-rm -fr $(GARBAGE) *.o *~
+
+cleanall: clean
+	@echo --- Cleanning Grabage with $(LIBNAME) ---
+	-rm -fr $(LIBNAME) $(LIBNAME)
+
+install:
+	@echo --- lib: skip ---

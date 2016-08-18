@@ -1,0 +1,62 @@
+/* ===========  T O O L B A R  ============ */
+body{
+    background:#fff url(../images/toolbar_bg.gif) right repeat-y;
+	margin:0 8px 10px 0 ;
+	font-family:"verdana","arial";
+	font-size:12px;
+	color:#000;
+	scrollbar-face-color:#e1e1e1;
+	scrollbar-highlight-color:#CDD2CF;
+	scrollbar-3dlight-color:#e1e1e1;
+	scrollbar-darkshadow-color:#e1e1e1;
+	scrollbar-shadow-color:#CDD2CF;
+	scrollbar-arrow-color:#CDD2CF;
+	scrollbar-track-color:#e1e1e1;
+}
+img{
+    border:none;
+}
+a:link,
+a:visited{
+    color:#000;
+	text-decoration:none;
+}
+a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+
+
+#h1_toolbar{
+    text-indent:-100em;
+	background:url(../images/toolbar_title.gif) no-repeat;
+	height:24px;
+	width:90%;
+	margin:0 0 12px 0!important;
+	margin: 0 0 2px 0;
+}
+#login{
+    background:url(../images/dot2.gif) repeat-x bottom;
+	height:95px;
+	width:90%;
+	margin:0 0 0 9px;
+}
+#login p{
+    margin: 0 0 10px 10px;
+}
+
+#list{
+    margin:18px 5px 5px 18px;
+}
+#list p{
+    margin:0 0 8px 0;
+}
+.sub{
+    margin:0!important;
+}
+#list img{
+    margin-right:8px;
+}
+#div0,#div1,#div2,#div3,#div4,#div5,#div6{
+	 margin-top:-8px;
+	 }

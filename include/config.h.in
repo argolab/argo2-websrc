@@ -1,0 +1,12 @@
+#define DEF_COLOREDSEX	//用彩色显示星座
+#define DEF_S_HOROSCOPE	//显示星座
+#define DEF_S_EXP	//显示经验值
+#define DEF_S_PERF	//显示表现值
+
+#define BBSHHOST        "http://@DOMAIN@"
+#define BANNER		"<img src=http://@DOMAIN@/icons/title.gif>"
+#define   SENDMAIL "/usr/sbin/sendmail"
+
+#define ATTACH_UPLOAD
+#define BROWSER_TIMEOUT		30
+#define KEEPALIVE_TIMEOUT	300

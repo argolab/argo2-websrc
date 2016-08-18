@@ -1,0 +1,61 @@
+Q: How to install the web bbs system?
+A: Just as many of the unix GPL software. Run the following command.
+  $ ./configure
+  $ make
+  $ make install
+   Then start httpd on console.
+
+Q: It reports error when compiling.
+A: I've tested this software in only cygwin(Linux), OSF1 and FreeBSD.
+   It may has problem when running in other platform. If you encounter
+   this problem, you can mail me the detail error message so I can go
+   into it.
+
+Q: It reports error when linking.
+A: My web bbs is developed for Yat-sen Channel, Zhongshan University.
+   It needs libSystem to link. libSystem can be found in PukeBBSD, a
+   bbsd telnet version maintained by monster. Or you can contract me
+   to mail you one.
+
+Q: Can it work together with my FireBird?
+A: No. The format of boards and anouncement is different from any
+   FireBird version in the world. You should use PukeBBSD as your
+   telnet version.
+
+Q: How can I change my FireBird to PukeBBSD without losing data?
+A: In fact this is not a Sanry-webbsd question, but we will be
+   grad to offer you a converting program to change the modern
+   FireBird data format to PukeBBSD format. However, because
+   PukeBBSD has extended the data structure, so old data doesn't
+   have new functions supported by PukeBBSD.
+
+Q: If I just want a www version...
+A: That's OK. Sanry-webbsd can work without telnet version bbsd,
+   and it doesn't need Apache, either.
+
+Q: I found a bug.
+A: So good. If you can give a patch, please mail a copy to me. If not, 
+   you are kind to mail me a BUG description, including the operation to 
+   reproduce the BUG.
+
+Q: How can I get the new version?
+A: Inside Zhongshan University campus, just login ftp://211.66.128.194/bbs, 
+   If you are outside ZSU, contract me to mail you one.
+
+Q: I still have problem...
+A: You can come to bbs.sysu.edu.cn, post your question in Bugreport board.
+
+
+Thanks to zhch. I use his njuwebbs as a base system.
+
+Thanks to monster. I borrow some codes from his PukeBBSD. He also offer me 
+  some details about telnet version's implement, and help me to test the 
+  web code.
+
+Thanks to sasa, my girlfriend. I use a lot of time to write code, not to 
+  go out shopping with you.
+
+Thanks to argo's sitemates. They report bugs to me and give me suggestions.
+
+				Henry (henryouly.bbs@bbs.sysu.edu.cn)
+				2003.2.18

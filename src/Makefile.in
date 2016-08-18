@@ -1,0 +1,52 @@
+CC	= @CC@
+CFLAGS	= @CFLAGS@ -I../include/bbs -I../include -lcurl
+OS_DEF  = @OS_DEF@
+BBSHOME = @BBS_HOME@
+CFILES	= process.c config.c syslog.c message.c signal.c comm_list.c \
+	  boards.c html.c webbs.c mail.c record.c string.c pass.c core.c\
+          ucache.c file.c http.c list.c modetype.c perm.c register.c shm.c\
+          login.c userinfo.c menu.c announce.c bbsdaemon.c vote.c\
+	  post.c maintain.c bcache.c report.c attach.c script.c unicode.c\
+	  filter.c sysconf.c boardsuggester.c ads.c
+
+COBJS	= process.o config.o syslog.o message.o signal.o comm_list.o \
+	  boards.o html.o webbs.o mail.o record.o string.o pass.o core.o\
+          ucache.o file.o http.o list.o modetype.o perm.o register.o shm.o\
+          login.o userinfo.o menu.o announce.o bbsdaemon.o vote.o\
+	  post.o maintain.o bcache.o report.o attach.o script.o unicode.o\
+	  filter.o sysconf.o boardsuggester.o ads.o
+
+.SUFFIXES: .c.o
+
+.c.o:
+	$(CC) $(CFLAGS) $(OS_DEF) -c $<
+
+httpd: core.c $(COBJS)	../lib/libSystem.a
+	$(CC) $(CFLAGS) $(OS_DEF) -L../lib -o httpd $(COBJS) -lSystem
+
+installnew:
+	sh ./Install.sh
+
+install: update
+	cp ../bbshome/etc/httpd.conf @BBS_HOME@/etc
+	cp -R ../bbshome/htdocs @BBS_HOME@
+	cp -R ../bbshome/pattern @BBS_HOME@
+	-mkdir @BBS_HOME@/wwwlog
+
+update: all
+	-cp httpd $(BBSHOME)/bin/httpd.new
+	-rm -f $(BBSHOME)/bin/httpd.old
+	-mv $(BBSHOME)/bin/httpd $(BBSHOME)/bin/httpd.old
+	mv $(BBSHOME)/bin/httpd.new $(BBSHOME)/bin/httpd
+
+all: httpd
+ 
+clean:
+	rm -f *.o httpd@EXT@ *.core *.~ *.stackdump
+
+cleanall: clean
+	rm -f Install.sh
+
+proto:
+	cproto *.c > ../include/prototypes.h
+

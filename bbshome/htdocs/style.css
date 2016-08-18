@@ -1,0 +1,293 @@
+A:visited{
+	TEXT-DECORATION: none;
+	Color:#000000
+}
+A:active{
+	TEXT-DECORATION: none;
+	Color:#000000
+}
+A:hover{
+	TEXT-DECORATION: underline;
+	Color:#000000
+}
+A:link{
+	text-decoration: none;
+	Color:#000000
+}
+.t{
+	LINE-HEIGHT: 1.4
+}
+BODY{
+	FONT-FAMILY: "宋体"; FONT-SIZE: 12px;
+	SCROLLBAR-HIGHLIGHT-COLOR: #99ccff;
+	SCROLLBAR-SHADOW-COLOR: #99ccff;
+	SCROLLBAR-3DLIGHT-COLOR: #99ccff;
+	SCROLLBAR-TRACK-COLOR: #FFFFFF;
+	SCROLLBAR-DARKSHADOW-COLOR: #99ccff;
+	scrollbar-Base-Color: #99ccff;
+	Color:#000000
+}
+TD,TH,p,div,br{
+	FONT-FAMILY: "宋体"; 
+	FONT-SIZE: 12px;
+	Color:#000000;
+}
+IMG{
+	BORDER-WIDTH: 0;
+}
+FORM{
+	FONT-FAMILY: "宋体"; 
+	FONT-SIZE: 12px
+}
+OPTION{
+	FONT-FAMILY: "宋体"; 
+	FONT-SIZE: 12px
+}
+INPUT{
+	BORDER-TOP-WIDTH: 1px; 
+	PADDING-RIGHT: 1px; 
+	PADDING-LEFT: 1px; 
+	BORDER-LEFT-WIDTH: 1px; 
+	FONT-SIZE: 9pt; 
+	BORDER-LEFT-COLOR: #cccccc; 
+	BORDER-BOTTOM-WIDTH: 1px; 
+	BORDER-BOTTOM-COLOR: #cccccc; 
+	PADDING-BOTTOM: 1px; 
+	BORDER-TOP-COLOR: #cccccc; 
+	PADDING-TOP: 1px; 
+	HEIGHT: 18px; 
+	BORDER-RIGHT-WIDTH: 1px; 
+	BORDER-RIGHT-COLOR: #cccccc; 
+	font-family: "宋体"; 
+	font-size: 12px
+}
+
+textarea {
+	border-width: 1; 
+	border-color: #000000; 
+	background-color: #efefef; 
+	font-family: "宋体"; 
+	font-size: 12px; 
+	font-style: bold;
+}
+
+select {
+	border-width: 1; 
+	border-color: #000000; 
+	background-color: #eeeeee; 
+	font-family: "宋体"; 
+	font-size: 12px; 
+	font-style: bold;
+}
+
+TABLE{
+    BORDER-TOP: 0px; 
+    BORDER-LEFT: 0px; 
+    BORDER-BOTTOM: 1px;
+    BORDER-COLOR: 0099cc;
+}
+
+TD{
+	BORDER-RIGHT: 0px; 
+	BORDER-TOP: 0px; 
+	color: #000000;
+}
+
+TH
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    COLOR: #000000;
+}
+
+IMG
+{
+    BORDER-WIDTH: 0;
+}
+
+/* 
+文章中使用的颜色.如果你用的不是BBS确省的黑色背景,  */
+/* 你可能需要修改它们,使它们与你的背景更协调          */
+FONT.col30
+{
+    COLOR: 000000
+}
+FONT.c30
+{
+    COLOR: 000000
+}
+FONT.col31
+{
+    COLOR: 800000
+}
+FONT.col32
+{
+    COLOR: 008000
+}
+FONT.c31
+{
+    COLOR: e00000
+}
+FONT.c32
+{
+    COLOR: 008000
+}
+FONT.col33
+{
+    COLOR: 808000
+}
+FONT.c33
+{
+    COLOR: 808000
+}
+FONT.col34
+{
+    COLOR: 000080
+}
+FONT.c34
+{
+    COLOR: 0000ff
+}
+FONT.col35
+{
+    COLOR: 800080
+}
+FONT.col36
+{
+    COLOR: 008080
+}
+FONT.col37
+{
+    COLOR: 808080
+}
+FONT.c35
+{
+    COLOR: d000d0
+}
+FONT.c36
+{
+    COLOR: 33a0a0
+}
+FONT.c37
+{
+    COLOR: 000000
+}
+
+/* 每页底部的链接 */
+TABLE.foot
+{
+    BORDER-COLLAPSE: seperate;
+}
+TH.foot 
+{
+    BACKGROUND-COLOR: 336699;
+    COLOR: white;
+    PADDING-LEFT: 2pt;
+    PADDING-RIGHT: 2pt;
+    PADDING-TOP: 2pt;
+    PADDING-BOTTOM: 2pt;
+    FONT-SIZE: 9pt;
+    WHITE-SPACE: pre
+}
+TH.foot A:link
+{
+    COLOR: white
+}
+TH.foot A:visited
+{
+    COLOR: white 
+}
+TH.foot A:hover
+{
+    COLOR: ffcc66
+}
+TH.foot A:active
+{
+    COLOR: ffcc66
+}
+ 
+/* 发表文章或注册时用的表格 */
+TABLE.post
+{
+    BORDER-COLLAPSE: collapse
+}
+TD.post
+{
+    BACKGROUND-COLOR: ebfae4;
+    COLOR: black;
+    WHITE-SPACE: pre
+}
+
+TD.body1
+{
+    BACKGROUND-COLOR: e8f4ff;
+}
+
+TD.body2
+{
+    BACKGROUND-COLOR: f2f8ff;
+}
+
+TABLE.body
+{
+    BORDER-TOP: 0px; 
+    BORDER-LEFT: 0px; 
+    BORDER-BOTTOM: 1px;
+    BORDER-COLOR: 0099cc;
+    COLOR: 000000;
+}
+
+TH.body
+{
+    BORDER-RIGHT: 0px; 
+    BORDER-TOP: 0px; 
+    BACKGROUND-COLOR: 99ccff;
+    COLOR: 000000;
+}
+
+TD.body
+{
+    BORDER-RIGHT: 0px; 
+    BORDER-TOP: 0px; 
+    BACKGROUND-COLOR: 99ccff;
+    COLOR: #000000;
+}
+
+/* 查看帖子 */
+TD {
+        FONT-SIZE: 12px; LINE-HEIGHT: 15px; FONT-FAMILY: 宋体
+}
+TH {
+        FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(/bg1.gif); COLOR: white; BACKGROUND-COLOR: #4455aa
+}
+TD.TableTitle2 {
+	COLOR: #000000; BACKGROUND-COLOR: #bfd3ee
+}
+TD.TableBody1 {
+	COLOR: #000000; BACKGROUND-COLOR: #e8f4ff
+}
+TD.TableBody2 {
+	COLOR: #000000; BACKGROUND-COLOR: #dbe8f2
+}
+TD.TopDarkNav {
+	BACKGROUND-COLOR: #72a7e9
+}
+TD.TopLighNav {
+	BACKGROUND-COLOR: #d1e6fc
+}
+.tableBorder1 {
+	BORDER-RIGHT: #6595d6 1px solid; BORDER-TOP: #6595d6 1px solid; BORDER-LEFT: #6595d6 1px solid; WIDTH: 100%; BORDER-BOTTOM: #6595d6 1px solid; BACKGROUND-COLOR: #ffffff }
+.tableBorder2 {
+	BORDER-RIGHT: #777777 1px solid; BORDER-TOP: #777777 1px solid; BORDER-LEFT: #777777 1px solid; WIDTH: 100%; BORDER-BOTTOM: #777777 1px solid; BACKGROUND-COLOR: #ffffff }
+#TableTitleLink A:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#TableTitleLink A:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#TableTitleLink A:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#TableTitleLink A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
