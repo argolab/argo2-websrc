@@ -448,7 +448,7 @@ int show_notepad() {
 		"</tr>"
 		"<tr>"
 		"<td class='tb_l'> </td>"
-		"<td class='footer' >※ 来源:．逸仙时空 Yat-sen Channel bbs.sysu.edu.cn．</td>"
+		"<td class='footer' >※ 来源:．" BBSNAME "电子公告板系统（BBS） " BBSWWWDOMAIN "</td>"
 		"<td class='tb_r'> </td>"
 		"</tr>"
 		"<tr class='tb_bottom'>" 

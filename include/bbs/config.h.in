@@ -183,6 +183,7 @@ so we don't need define this by passing make argument to the complier
 #define BBSGID   @BBS_GID@
 #define BBSHOME "@BBS_HOME@"
 #define BBSNAME "@BBS_CNAME@"
+#define BBSWWWDOMAIN "@BBS_WWWDOMAIN@"
 #define BBSID   "@BBS_ID@"
 #define BBSHOST "@DOMAIN@"
 #define BBSIP	"@BBS_IP@"

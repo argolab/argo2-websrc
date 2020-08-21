@@ -1118,6 +1118,10 @@ echo -n "The name of your site --> [Test Land] "
 read BBS_CNAME
 BBS_CNAME=${BBS_CNAME:-"Test Land"}
 
+echo -n "The www domain of your site --> [mybbs.com] "
+read BBS_WWWDOMAIN
+BBS_WWWDOMAIN=${BBS_WWWDOMAIN:-"mybbs.com"}
+
 echo "The Default board of your site, only change it if upgrading "
 echo -n "from old system with different default board --> [sysop] "
 read DEFAULTBD
@@ -1312,6 +1316,7 @@ s%@BBS_GID@%$BBS_GID%g
 s%@BBS_GROUP@%$BBS_GROUP%g
 s%@CSIE_DEF@%$CSIE_DEF%g
 s%@BBS_CNAME@%$BBS_CNAME%g
+s%@BBS_WWWDOMAIN@%$BBS_WWWDOMAIN%g
 s%@BBS_ID@%$BBS_ID%g
 s%@BBS_IP@%$BBS_IP%g
 s%@DEFAULTBD@%$DEFAULTBD%g

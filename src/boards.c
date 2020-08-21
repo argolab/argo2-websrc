@@ -234,7 +234,7 @@ show_main_frame(){
 	printf("<html>"
 		"<head>"
 		"	<meta http-equiv='Content-Type' content='text/html; charset=gb2312'>"
-		"	<title>中山大学逸仙时空BBS</title>"
+		"	<title>" BBSNAME "电子公告板系统（BBS）</title>"
 		"</head>"
 		"<frameset rows='*' cols='175,*' frameborder='NO' border='0' framespacing='0'>"
 		"	<frame src='bbsleft' name='f2' scrolling='auto' noresize id='f2'>"
@@ -275,8 +275,7 @@ show_all_section()
 		"<link href=templates/global.css rel=stylesheet type=text/css />"
 		"</head>"
 		"<body>"
-	       // add to new version hint
-	       "<a class=\"tonew\" href=\"http://argo.sysu.edu.cn\">温馨提醒：逸仙时空新版改版进行时，欢迎体验</a>"
+	       // insert html here
 		"<form name=form1 method=post action=>"
 		"<div id=head>"
 		"<div id=index_search>"
@@ -288,7 +287,7 @@ show_all_section()
 		"<table border=0 cellspacing=0 cellpadding=0 id=boards>"
 		"<tr>" 
 		"<td colspan=5 class=tb_head>"
-		"<img src=images/table_ul02.gif style=float:left class=tb_ul /><div class=title>分类讨论区</div></td>"
+		"<img src=images/table_ul02.gif style=float:left class=tb_ul /><div class=title>讨论区地图</div></td>"
 		"<td width=19 align=right valign=top class=tb_r><img src=images/table_ur.gif /></td>"
 		"</tr>"
 		"<tr>"

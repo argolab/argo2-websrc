@@ -938,7 +938,7 @@ char *defines[] = {
         "编辑时显示状态栏",             /* DEF_EDITMSG */
         "讯息栏采用一般/精简模式",      /* DEF_NOTMSGFRIEND */
         "选单采用一般/精简模式",        /* DEF_NORMALSCR */
-        "分类讨论区以 New 显示",        /* DEF_NEWPOST */
+        "讨论区地图以 New 显示",        /* DEF_NEWPOST */
         "阅读文章是否使用绕卷选择",     /* DEF_CIRCLE */
         "阅读文章游标停於第一篇未读",   /* DEF_FIRSTNEW */
         "进站时显示好友名单",           /* DEF_LOGFRIEND */

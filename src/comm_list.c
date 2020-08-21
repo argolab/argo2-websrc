@@ -10,9 +10,9 @@ typedef struct {
 
 static MENU cmdlist[] = {
 {"login", do_login, 0, "text/html"}, /* 登陆 */
-{"allsec", show_all_section, 0, "text/html"}, /* 分类讨论区页面 */
+{"allsec", show_all_section, 0, "text/html"}, /* 讨论区地图页面 */
 {"left", show_menu, 0, "text/html"},	      /* 登陆后左侧边栏，即命令列表 */
-{"boa", show_section, 0, "text/html"}, /* ?board=id，显示分类讨论区 */
+{"boa", show_section, 0, "text/html"}, /* ?board=id，显示讨论区地图 */
 {"doc", show_board, 0, "text/html"}, /* ?board=xxx, 显示xx版文章列表 */
 {"con", show_article, 0, "text/html"}, /* ?board=xx&file=filename，阅读单个帖子 */
 {"0an", show_annpath, 0, "text/html"}, /* ?path=xxx, 显示精华区文章列表，path=/personal为个人文集 */

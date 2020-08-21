@@ -494,7 +494,7 @@ int show_activation_from(){
 	printf("<html>\n");
 	printf("<head>\n");
 	printf("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=gb2312\" />\n");
-	printf("<title>中山大学逸仙时空BBS</title>\n");
+	printf("<title>" BBSNAME "电子公告板系统（BBS）</title>\n");
 	printf("<link href=\"templates/global.css\" rel=\"stylesheet\" type=\"text/css\" />\n");
 	printf("<style type=\"text/css\">\n");
 	printf("body{\n");
@@ -506,14 +506,14 @@ int show_activation_from(){
 	printf("<form name=\"form1\" method=\"post\" action=\"bbsauth?type=5\">\n");
 	printf("<div id=\"head\">\n");
 	printf("<div id=\"location\">\n");
-	printf("<p><img src=\"images/location01.gif\" alt=\"\" align=\"absmiddle\"/><a href=\"bbsallsec\">逸仙时空 Yat-Sen Channel</a></p>\n");
+	printf("<p><img src=\"images/location01.gif\" alt=\"\" align=\"absmiddle\"/><a href=\"bbsallsec\">" BBSNAME "电子公告板系统（BBS）</a></p>\n");
 	printf("<p><img src=\"images/location03.gif\" alt=\"\" align=\"absmiddle\"/>激活帐号</p>\n");
 	printf("</div>\n");
 	printf("</div>\n");
 	printf("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"table\">\n");
 	printf("<tr> \n");
 	printf("<td colspan=\"2\" class=\"tb_head\"><img src=\"images/table_ul06.gif\" alt=\"\" width=\"37\" height=\"25\" align=\"absmiddle\" class=\"tb_ul\" style=\"float:left\" /> \n");
-	printf("<div style=\"margin-top:8px\">1. 注册帐号 --> <font color=#0000ff>2. 激活帐号</font> --> 3. 畅游逸仙</div></td>\n");
+	printf("<div style=\"margin-top:8px\">1. 注册帐号 --> <font color=#0000ff>2. 激活帐号</font> --> 3. 畅游我站</div></td>\n");
 	printf("<td align=\"right\" valign=\"top\" class=\"tb_r\"><img src=\"images/table_ur.gif\" alt=\"\"/></td>\n");
 	printf("</tr>\n");
 	printf("<tr>\n");
